@@ -26,6 +26,8 @@ SECRET_KEY = 'django-insecure-du15u$iz-o0mrfu&w20=4o4bv%sgn4wl**f&=(@(j7-a$rr56^
 DEBUG = True
 
 ALLOWED_HOSTS = ['52.65.105.98', 'localhost', '127.0.0.1']
+# settings.py
+LOGIN_URL = 'login'  # This is the URL name you defined for the login page
 
 
 # Application definition
