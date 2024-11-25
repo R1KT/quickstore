@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'quickstore.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'quickstore_django',
+        'USER': 'root',
+        'PASSWORD': 'Techismypassion2000',
+        'HOST': '127.0.0.1',  # Use the database server's IP address or hostname
+        'PORT': '3306',
     }
 }
 
