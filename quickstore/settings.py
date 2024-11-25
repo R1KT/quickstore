@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'accounts',
     'corsheaders',
 ]
+# Expire session when the browser is closed
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True  # Default is False
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
