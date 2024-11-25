@@ -7,7 +7,7 @@ def login_view(request):
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
-        user = authenticate(request, username, password)
+        user = authenticate(request, username=username, password=password)
 
         if user:
             login(request, user)
@@ -16,5 +16,5 @@ def login_view(request):
         else:
             messages.error(request, "Login Failed!!")
 
-        return render(request, 'login/login.html')
+    return render(request, 'login/login.html')
 
