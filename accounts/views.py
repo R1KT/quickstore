@@ -13,11 +13,12 @@ def login_view(request):
         if user:
             login(request, user)
             messages.success(request, 'Logged in successfully')
-            return redirect('dashboard')
+            return redirect('dashboard_view')
         else:
             messages.error(request, "Login Failed!!")
 
     return render(request, 'login/login.html')
+
 @login_required
 def dashboard_view(request):
     return render(request, 'login/home/html')
