@@ -1,3 +1,4 @@
 django
 waitress
 mysqlclient
+django-cors-headers
