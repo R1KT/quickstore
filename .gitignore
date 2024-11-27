@@ -2,4 +2,4 @@ venv/
 *.pyc
 __pycache__/
 db.sqlite3
-git_push.ps1
+*.ps1
