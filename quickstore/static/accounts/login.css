@@ -72,6 +72,7 @@ input[type="password"] {
     border-radius: 4px;
 }
 .showPassBtn {
+    align-self: center;
     position: absolute;
     right: 10px;
     top: 50%;
