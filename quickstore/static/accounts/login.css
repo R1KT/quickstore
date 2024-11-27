@@ -88,12 +88,14 @@ input[type="password"] {
     border: none;
 }
 @media screen and (max-width: 600px) {
-    /* Scale down the form width */
+    .loginContainer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     form {
-        width: 80%; /* Make the form take more width on small screens */
+        width: 80%;
     }
 
-    /* Reduce padding and font size for smaller devices */
     input[type="text"],
     input[type="password"],
     button {
