@@ -62,6 +62,7 @@ button:hover {
 
 .passwordContainer {
     position : relative;
+    background-color: #333;
 }
 input[type="password"] {
     padding: 8px;
