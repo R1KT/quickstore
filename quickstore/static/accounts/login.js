@@ -1,5 +1,4 @@
-document.getElementById('togglePassword').addEventListener('click', function () {
-    const checkbox = document.getElementById('showPass');
+const checkbox = document.getElementById('showPass');
     const passwordField = document.getElementById('password');
 
     checkbox.addEventListener('change', function() {
@@ -9,5 +8,4 @@ document.getElementById('togglePassword').addEventListener('click', function () 
         } else {
             passwordField.type = 'password';
         }
-    });
 });
