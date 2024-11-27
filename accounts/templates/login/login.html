@@ -21,10 +21,10 @@
         {% endif %}
         <form method="post">
             {% csrf_token %}
-            <label class="label" for="username">Username:</label>
+            <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
             <br>
-            <label class="label" for="password">Password:</label>
+            <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
             <br>
             <button type="submit">Login</button>
