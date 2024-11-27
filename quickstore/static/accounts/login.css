@@ -84,4 +84,6 @@ input[type="password"] {
 
 .showPassBtn:hover {
     text-decoration: underline;
+    background: none;
+    border: none;
 }
