@@ -87,3 +87,22 @@ input[type="password"] {
     background: none;
     border: none;
 }
+@media screen and (max-width: 600px) {
+    /* Scale down the form width */
+    form {
+        width: 80%; /* Make the form take more width on small screens */
+    }
+
+    /* Reduce padding and font size for smaller devices */
+    input[type="text"],
+    input[type="password"],
+    button {
+        padding: 10px;
+        font-size: 14px; /* Smaller text */
+    }
+
+    /* Adjust the Show/Hide button */
+    .showPassBtn {
+        font-size: 12px; /* Smaller button text */
+    }
+}
