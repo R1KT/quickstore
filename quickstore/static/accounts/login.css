@@ -9,7 +9,7 @@ body {
 }
 
 .loginContainer {
-    min-width: 400px;
+    max-width: 400px;
     margin: 50px auto;
     padding: 20px;
     background-color: #ebebeb;
