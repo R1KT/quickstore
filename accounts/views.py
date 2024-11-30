@@ -12,7 +12,7 @@ def loginView(request):
 
         if user:
             login(request, user)
-            return redirect('dashboard:home')
+            return HttpResponseRedirect('/home/')
         else:
             messages.error(request, "Login Failed!!")
 
