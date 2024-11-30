@@ -15,7 +15,7 @@ def loginView(request):
             print("User authenticated")
             login(request, user)
             if 'next' in request.POST:
-                print(f"Redirecting to: {next_url}")
+                print(f"Redirecting to: next_url")
                 return redirect(request.POST['next'])
             else:
                 return redirect('dashboard:home')
