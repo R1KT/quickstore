@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ['52.65.105.98', 'localhost', '127.0.0.1']
 # settings.py
 LOGIN_URL = 'login'  # This is the URL name you defined for the login page
 # settings.py
-
+LOGIN_REDIRECT_URL = ""
 
 
 # Application definition
