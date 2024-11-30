@@ -21,7 +21,7 @@ def loginView(request):
                 return redirect('dashboard:home')
         else:
             print("Invalid credentials")
-            return render(request, "login/login.html", {'error' : 'Invalid Credentials'})
+            return render(request, "login\login.html", {'error' : 'Invalid Credentials'})
 
-    return render(request, 'login/login.html')
+    return render(request, 'login\login.html')
 
