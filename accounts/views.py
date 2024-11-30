@@ -14,11 +14,11 @@ def loginView(request):
         if user:
             print("User authenticated")
             login(request, user)
-            # if 'next' in request.POST:
-            #     print(f"Redirecting to: next_url")
-            #     return redirect(request.POST['next'])
-            # else:
-            return redirect('dashboard:home')
+            if 'next' in request.POST:
+                print(f"Redirecting to: next_url")
+                return redirect(request.POST['next'])
+            else:
+                return redirect('dashboard:home')
         else:
             print("Invalid credentials")
             return render(request, "login/login.html", {'error' : 'Invalid Credentials'})
