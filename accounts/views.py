@@ -12,8 +12,7 @@ def loginView(request):
 
         if user:
             login(request, user)
-            next_url = request.GET.get('next', '/dashboard/')
-            return redirect(next_url)
+            return redirect('dashboard:home')
         else:
             return render(request, "login/login.html", {'error' : 'Invalid Credentials'})
 
