@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'dashboard',
 ]
 # Expire session when the browser is closed
-SESSION_EXPIRE_AT_BROWSER_CLOSE = True  # Default is False
+SESSION_COOKIE_AGE = 0  # Set session to expire on browser close
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
