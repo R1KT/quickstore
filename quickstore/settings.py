@@ -58,7 +58,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'accounts.middleware.LogoutOnRefreshMiddleware',
 ]
 CSRF_TRUSTED_ORIGINS = [
     'http://52.65.105.98:8001',
