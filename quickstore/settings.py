@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ['52.65.105.98', 'localhost', '127.0.0.1']
 # settings.py
 LOGIN_URL = 'login'  # This is the URL name you defined for the login page
 # settings.py
-LOGIN_REDIRECT_URL = 'dashboard_view'  # or wherever you want to redirect after login
+LOGIN_REDIRECT_URL = 'homeView'  # or wherever you want to redirect after login
 
 
 # Application definition
@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'corsheaders',
-    'dashboard'
+    'dashboard',
 ]
 # Expire session when the browser is closed
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True  # Default is False
