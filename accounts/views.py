@@ -1,7 +1,7 @@
 from django.shortcuts import render,redirect
 from django.contrib.auth import authenticate, login
 from django.contrib import messages
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 
 def loginView(request):
@@ -12,10 +12,7 @@ def loginView(request):
 
         if user:
             login(request, user)
-            next_url = request.GET.get('next')
-            if next_url:
-                return redirect(next_url)
-            return redirect('dashboard:home')
+            return HttpResponseRedirect('/')
         else:
             messages.error(request, "Login Failed!!")
 
