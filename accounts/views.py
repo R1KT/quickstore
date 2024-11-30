@@ -12,10 +12,7 @@ def loginView(request):
 
         if user:
             login(request, user)
-            if 'next' in request.POST:
-                return redirect(request.POST['next'])
-            else:
-                return redirect('dashboard:home')
+            return redirect('dashboard:home')
         else:
             return render(request, "login\login.html", {'error' : 'Invalid Credentials'})
 
