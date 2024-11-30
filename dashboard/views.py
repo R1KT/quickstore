@@ -3,8 +3,8 @@ from django.contrib.auth.decorators import login_required
 
 @login_required
 def homeView(request):
-    if request.method == 'GET':
-        return render(request, 'home\home.html')
+    request.session.set_expiry(0)
+    return render(request, 'home\home.html')
 
 
 
