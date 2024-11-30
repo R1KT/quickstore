@@ -16,5 +16,5 @@ def loginView(request):
         else:
             messages.error(request, "Login Failed!!")
 
-    return render(request, 'login\login.html')
+    return render(request, 'login/login.html')
 
