@@ -10,6 +10,4 @@ class LogoutOnRefreshMiddleware:
         # Logout the user after processing the request
         if request.user.is_authenticated:
             logout(request)
-        if not request.user.is_authenticated and request.path != '/':
-            return redirect('login')
         return response
