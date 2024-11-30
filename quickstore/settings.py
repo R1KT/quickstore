@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'corsheaders',
+    'dashboard'
 ]
 # Expire session when the browser is closed
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True  # Default is False
