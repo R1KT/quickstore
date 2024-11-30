@@ -12,10 +12,12 @@ def loginView(request):
 
         if user:
             login(request, user)
-            messages.success(request, 'Logged in successfully')
+            next_url = request.GET.get('next')
+            if next_url:
+                return redirect(next_url)
             return redirect('dashboard:home')
         else:
             messages.error(request, "Login Failed!!")
 
-    return render(request, 'login/login.html')
+    return render(request, 'login\login.html')
 
