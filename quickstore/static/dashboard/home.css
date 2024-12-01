@@ -17,33 +17,21 @@ body {
     align-items: center;
 }
 
+.navBarContainer {
+    display: flex;
+    justify-content: center;
+}
 /* Header styling */
-header {
-    background-color: #0056b3;
-    color: white;
-    width: 100%;
-    padding: 15px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 24px;
-    text-align: center;
-}
 
 /* Navigation menu */
-.nav-bar {
+.navBar {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin: 20px 0;
 }
 
-.nav-bar a {
+.navBar a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
@@ -52,12 +40,12 @@ header h1 {
     font-size: 16px;
 }
 
-.nav-bar a:hover {
+.navBar a:hover {
     background-color: #0056b3;
 }
 
 /* Main content area */
-.main-content {
+.mainContent {
     background-color: #ebebeb; /* Matches login container background */
     padding: 20px;
     border-radius: 8px;
@@ -67,56 +55,13 @@ header h1 {
     text-align: center;
 }
 
-.main-content h2 {
+.mainContent h2 {
     font-size: 22px;
     color: #333;
     margin-bottom: 20px;
 }
 
-.main-content p {
+.mainContent p {
     font-size: 16px;
     line-height: 1.6;
-}
-
-/* Footer */
-footer {
-    margin-top: 30px;
-    padding: 10px 20px;
-    text-align: center;
-    background-color: #0056b3;
-    color: white;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-    font-size: 14px;
-}
-
-/* Buttons */
-.button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 20px;
-    font-size: 16px;
-}
-
-.button:hover {
-    background-color: #0056b3;
-}
-
-/* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
-    .main-content {
-        width: 90%;
-    }
-
-    .nav-bar {
-        flex-direction: column;
-        gap: 10px;
-    }
 }

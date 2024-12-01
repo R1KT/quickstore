@@ -8,27 +8,13 @@
     <link rel="stylesheet" type="text/css" href="{% static 'dashboard/home.css' %}">
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Dashboard</h1>
-    </header>
-
-    <nav class="nav-bar">
-        <a href="/create-resident/">Create Resident</a>
-        <a href="/services/">Services</a>
-        <a href="/notifications/">Notifications</a>
-        <a href="/profile/">Profile</a>
-    </nav>
-
-    <div class="container">
-        <section class="main-content">
-            <h2>Dashboard Overview</h2>
-            <p>Welcome back! Here you can manage residents, handle service requests, and much more.</p>
-            <button class="button">Get Started</button>
-        </section>
+    <div class="navBarContainer">
+        <nav class="navBar">
+            <a href="/create-resident/">Create Resident</a>
+            <a href="/services/">Services</a>
+            <a href="/notifications/">Notifications</a>
+            <a href="/profile/">Profile</a>
+        </nav>
     </div>
-
-    <footer>
-        <p>&copy; 2024 Residence Management System</p>
-    </footer>
 </body>
 </html>
