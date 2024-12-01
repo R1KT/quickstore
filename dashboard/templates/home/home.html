@@ -1,18 +1,34 @@
-<header class="header">
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'dashboard/home.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Dashboard</h1>
+    </header>
+
     <nav class="nav-bar">
-        <ul class="nav-menu">
-            <li><a href="/dashboard">Dashboard</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/reports">Reports</a></li>
-        </ul>
-        <div class="header-actions">
-            <button class="btn create-resident">Create Resident</button>
-            <div class="notification">
-                <i class="icon-bell"></i>
-            </div>
-            <div class="profile">
-                <img src="/static/images/profile-pic.png" alt="Profile" class="profile-pic">
-            </div>
-        </div>
+        <a href="/create-resident/">Create Resident</a>
+        <a href="/services/">Services</a>
+        <a href="/notifications/">Notifications</a>
+        <a href="/profile/">Profile</a>
     </nav>
-</header>
+
+    <div class="container">
+        <section class="main-content">
+            <h2>Dashboard Overview</h2>
+            <p>Welcome back! Here you can manage residents, handle service requests, and much more.</p>
+            <button class="button">Get Started</button>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Residence Management System</p>
+    </footer>
+</body>
+</html>
