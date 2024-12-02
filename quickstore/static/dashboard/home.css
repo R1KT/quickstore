@@ -28,6 +28,9 @@ body {
 
 /* Navigation Bar */
 .navBar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     gap: 20px;
 }
