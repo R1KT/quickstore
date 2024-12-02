@@ -28,10 +28,9 @@ body {
 
 /* Navigation Bar */
 .navBar {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    flex: 1; /* Allows the navBar to grow and center itself */
     display: flex;
+    justify-content: center; /* Centers nav items horizontally */
     gap: 20px;
 }
 
@@ -51,8 +50,6 @@ body {
 /* Right-Side Action Buttons */
 .actionButtons {
     display: flex;
-    position: absolute;
-    right: 10%;
     gap: 15px;
 }
 
