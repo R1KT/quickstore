@@ -17,26 +17,22 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Header Wrapper */
-.headerWrapper {
+/* Navigation Wrapper */
+.navWrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    position: relative; /* Ensure proper alignment */
 }
 
-/* Centered Navigation Bar */
+/* Navigation Bar */
 .navBar {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
     gap: 20px;
 }
 
-.navItem {
+.navLink {
     text-decoration: none;
     color: white;
     font-size: 16px;
@@ -45,7 +41,7 @@ body {
     transition: background-color 0.3s;
 }
 
-.navItem:hover {
+.navLink:hover {
     background-color: #1b4a93;
 }
 
