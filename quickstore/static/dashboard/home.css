@@ -19,10 +19,8 @@ body {
 
 /* Navigation Wrapper */
 .navWrapper {
-    position: absolute;
-    left: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Ensures space between nav and action buttons */
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -30,10 +28,10 @@ body {
 
 /* Navigation Bar */
 .navBar {
-    flex: 1; /* Allows the navBar to grow and center itself */
     display: flex;
     justify-content: center; /* Centers nav items horizontally */
     gap: 20px;
+    flex: 1; /* Ensures the navBar takes up available space */
 }
 
 .navLink {
@@ -53,6 +51,7 @@ body {
 .actionButtons {
     display: flex;
     gap: 15px;
+    justify-content: flex-end; /* Aligns action buttons to the right */
 }
 
 .actionButton {
