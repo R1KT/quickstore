@@ -50,7 +50,8 @@ body {
 
 /* Right-Side Action Buttons */
 .actionButtons {
-    display: flex;
+    position: absolute;
+    right: 10%;
     gap: 15px;
 }
 
