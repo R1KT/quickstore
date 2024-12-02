@@ -21,11 +21,11 @@ body {
 .navWrapper {
     position: absolute;
     left: 50%;
-    /* display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto; */
+    margin: 0 auto;
 }
 
 /* Navigation Bar */
