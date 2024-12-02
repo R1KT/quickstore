@@ -20,7 +20,7 @@ body {
 /* Navigation Wrapper */
 .navWrapper {
     display: flex;
-    justify-content: space-between; /* Ensures space between nav and action buttons */
+    justify-content: space-between; /* Space between navigation and buttons */
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -29,9 +29,8 @@ body {
 /* Navigation Bar */
 .navBar {
     display: flex;
-    justify-content: center; /* Centers nav items horizontally */
+    justify-content: flex-start; /* Align navigation items to the left */
     gap: 20px;
-    flex: 1; /* Ensures the navBar takes up available space */
 }
 
 .navLink {
