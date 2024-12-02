@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Define paths to external HTML files for each section
     const contentMap = {
-        residentContent: '/dashboard/screens/residents.html',
+        residentContent: '/static/dashboard/screens/residents.html',
     };
 
     // Add click event listeners to each nav link
