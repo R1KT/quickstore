@@ -1,67 +1,85 @@
-/* Body styling */
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #2d63b4; /* Matches login page background */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     color: #333;
 }
 
-/* Wrapper to center content */
-.container {
+/* Header Styling */
+.headerContainer {
+    background-color: #2d63b4; /* Primary color */
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Wrapper */
+.navWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.navBarContainer {
-    display: flex;
-    justify-content: center;
-}
-/* Header styling */
-
-/* Navigation menu */
+/* Navigation Bar */
 .navBar {
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 20px 0;
+    gap: 20px;
 }
 
-.navBar a {
-    color: white;
+.navLink {
     text-decoration: none;
-    padding: 10px 15px;
-    background-color: #007bff;
-    border-radius: 4px;
+    color: white;
     font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
-.navBar a:hover {
-    background-color: #0056b3;
+.navLink:hover {
+    background-color: #1b4a93;
 }
 
-/* Main content area */
+/* Right-Side Action Buttons */
+.actionButtons {
+    display: flex;
+    gap: 15px;
+}
+
+.actionButton {
+    background-color: white;
+    color: #2d63b4;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.actionButton:hover {
+    background-color: #1b4a93;
+    color: white;
+}
+
+/* Main Content */
 .mainContent {
-    background-color: #ebebeb; /* Matches login container background */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 900px;
     text-align: center;
 }
 
-.mainContent h2 {
-    font-size: 22px;
-    color: #333;
+main h1 {
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
-.mainContent p {
+main p {
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.5;
 }
