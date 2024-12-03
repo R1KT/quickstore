@@ -5,6 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Define paths to external HTML files for each section
     const contentMap = {
+        dashboardContent: {
+            html : '/static/dashboard/screens/dashboard/dashboard.html',
+            css : '/static/dashboard/screens/dashboard/dashboard.css',
+        },
         residentContent: {
             html : '/static/dashboard/screens/residents/residents.html',
             css : '/static/dashboard/screens/residents/residents.css',
@@ -66,5 +70,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-
-    
