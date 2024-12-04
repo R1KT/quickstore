@@ -21,3 +21,6 @@ def loginView(request):
 
     return render(request, 'login\login.html')
 
+def newResidentView(request):
+    request.session.set_expiry(0)
+    return render(request, 'residents\\newResidents\\newResident.html')
