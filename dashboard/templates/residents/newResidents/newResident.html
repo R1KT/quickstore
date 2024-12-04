@@ -1,0 +1,21 @@
+
+{% extends 'baseTemplates/header.html' %}
+
+
+{% block title %}New Resident{% endblock %}
+
+{% block content %}
+<form action="/new" method="post">
+
+    <label for="firstName">First Name</label>
+    <input type="text" name="firstName" id="firstName" required>
+
+    <label for="firstName">Last Name</label>
+    <input type="text" name="firstName" id="firstName" required>
+    
+    <label for="firstName">Phone</label>
+    <input type="text" name="firstName" id="firstName" required>
+
+    <button type="submit">Create</button>
+</form>
+{% endblock %}

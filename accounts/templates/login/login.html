@@ -1,44 +1,38 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'accounts/login.css' %}">
-</head>
-<body>
+
     <div class="loginContainer">
-        <h2>Login</h2>
-        {% if messages %}
-            {% for message in messages %}
-                {% if message.tags == 'error' %}
-                    <p id="red">{{ message }}</p>
-                {% else %}
-                    <p id="green">{{ message }}</p>
-                {% endif %}
-            {% endfor %}
-        {% endif %}
-        <form action="/" method="post">
-            {% csrf_token %}
-
-            {% if request.GET.next %}
-                <input type="hidden", name="next", value="{{request.GET.next}}">
-            {% endif %}
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
-            <br>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-
-            <label for="showPass">
-                <input type="checkbox" id="showPass" name="showPass">
-                Show Password
-            </label>
-            <br>
-            <button type="submit">Login</button>
-        </form>
+        
+        {% endblock %}
     </div>
-    <script src="{% static 'accounts/login.js' %}"></script>
-</body>
-</html>
+{% extends 'base/base.html' %}
+
+{% block title %}Login{% endblock %}
+{% block form %}
+    <h2>Login</h2>
+    {% if messages %}
+        {% for message in messages %}
+            {% if message.tags == 'error' %}
+                <p id="red">{{ message }}</p>
+            {% else %}
+                <p id="green">{{ message }}</p>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+    <form action="/" method="post">
+        {% csrf_token %}
+        {% if request.GET.next %}
+            <input type="hidden", name="next", value="{{request.GET.next}}">
+        {% endif %}
+            <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="showPass">
+            <input type="checkbox" id="showPass" name="showPass">
+            Show Password
+        </label>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+{% endblock %}
