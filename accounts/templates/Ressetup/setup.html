@@ -5,17 +5,17 @@
 {% block title %}New Resident{% endblock %}
 
 {% block content %}
-<form action="/new" method="post">
+<form action="/setup-account" method="POST">
+    <label for="buildingNumber">Building Number:</label>
+    <input type="text" id="buildingNumber" name="buildingNumber" required>
 
-    <label for="firstName">First Name</label>
-    <input type="text" name="firstName" id="firstName" required>
+    <label for="apartmentNumber">Apartment Number:</label>
+    <input type="text" id="apartmentNumber" name="apartmentNumber" required>
 
-    <label for="firstName">Last Name</label>
-    <input type="text" name="firstName" id="firstName" required>
-    
-    <label for="firstName">Phone</label>
-    <input type="text" name="firstName" id="firstName" required>
+    <label for="password">Set Password:</label>
+    <input type="password" id="password" name="password" required>
 
-    <button type="submit">Create</button>
+    <button type="submit">Setup Account</button>
 </form>
+
 {% endblock %}
