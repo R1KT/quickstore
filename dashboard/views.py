@@ -10,5 +10,13 @@ def residentsView(request):
     request.session.set_expiry(0)
     return render(request, 'residents\\residents.html')
 
+def servicesView(request):
+    request.session.set_expiry(0)
+    return render(request, 'services\\services.html')
+
+def guestsView(request):
+    request.session.set_expiry(0)
+    return render(request, 'guestLog\\guestLog.html')
+
 
 
