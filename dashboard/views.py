@@ -10,6 +10,10 @@ def residentsView(request):
     request.session.set_expiry(0)
     return render(request, 'residents\\residents.html')
 
+def newResidentView(request):
+    request.session.set_expiry(0)
+    return render(request, 'residents\\newResident.html')
+
 def servicesView(request):
     request.session.set_expiry(0)
     return render(request, 'services\\services.html')
