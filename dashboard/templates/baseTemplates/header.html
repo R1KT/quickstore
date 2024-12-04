@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My App{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'dashboard/home.css' %}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="headerContainer">
+        <div class="navWrapper">
+            <!-- Navigation Menu -->
+            <nav class="navBar">
+                <a href="/residents/" class="navLink" data-content="residentContent">Residents</a>
+                <a href="#" class="navLink" data-content="servicesContent">Services</a>
+                <a href="#" class="navLink" data-content="guestLogContent">Guest Log</a>
+            </nav>
+            <!-- Right-Side Actions -->
+            <div class="actionButtons">
+                <button class="actionButton newResidentButton">+ New Resident</button>
+                <button class="actionButton notificationButton">🔔</button>
+                <button class="actionButton profileButton">🙍‍♂️</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="mainContent" id="mainContent">
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
+
+
