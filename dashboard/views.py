@@ -12,7 +12,7 @@ def residentsView(request):
 
 def newResidentView(request):
     request.session.set_expiry(0)
-    return render(request, 'residents\\newResident.html')
+    return render(request, 'residents\\newResidents\\newResident.html')
 
 def servicesView(request):
     request.session.set_expiry(0)
